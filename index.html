@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Test nav</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+	<nav>
+		<div class="wrapper">
+			<input type="radio" name="slider" id="menu-btn">
+			<input type="radio" name="slider" id="close-btn">
+			<ul class="nav-links">
+				<label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+				<li><a href="#">Элемент 1</a></li>
+				<li>
+					<!-- TODO ARROW, FONT, SIZE, DROPDOWN -->
+					<a href="#" class="desktop-item">Элемент 2</a>
+					<a class="mobile-item-sub" href="#first"><input type="checkbox" class="mobile-input-sub-1" id="showMega"><label for="showMega" ><span class="arrow"><i
+								class="fa fa-angle-down"></i></span></label></a>
+					<a class="mobile-elem-sub" href="#">Элемент 2</a>
+					<div id="first" class="mega-box mega-box-1">
+						<div class="content">
+							<div class="row">
+								<a href="#">Элемент 2.1</a>
+							</div>
+							<div class="row">
+								<a href="#" class="desktop-item">Элемент 2.2</a>
+								<a class="mobile-item-sub" href="#second"><input type="checkbox" class="mobile-input-sub-2" id="showSub-1">
+								<label for="showSub-1" >
+									<span class="arrow"><i class="fa fa-angle-down"></i></span></label></a>
+								<a class="mobile-elem-sub" href="#">Элемент 2.2</a>
+								<ul class="mega-links">
+									<li><a href="#">Элемент 2.2.1</a></li>
+									<li><a href="#">Элемент 2.2.2</a></li>
+									<li><a href="#">Элемент 2.2.3</a></li>
+								</ul>
+								<div id="second" class="mega-box-sub mega-box-2">
+									<div class="content">
+										<div class="row">
+											<ul class="mega-links-sub">
+												<li><a href="#">Элемент 2.2.1</a></li>
+												<li><a href="#">Элемент 2.2.2</a></li>
+												<li><a href="#">Элемент 2.2.3</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<a href="#">Элемент 2.3</a>
+							</div>
+							<div class="row">
+								<a href="#" class="desktop-item">Элемент 2.4</a>
+								<a class="mobile-item-sub" href="#third"><input type="checkbox" class="mobile-input-sub-3" id="showSub-2">
+								<label for="showSub-2" ><span class="arrow"><i
+											class="fa fa-angle-down"></i></span></label></a>
+
+								<a class="mobile-elem-sub" href="#">Элемент 2.4</a>
+								<ul class="mega-links">
+									<li><a href="#">Элемент 2.4.1</a></li>
+									<li><a href="#">Элемент 2.4.2</a></li>
+									<li><a href="#">Элемент 2.4.3</a></li>
+									<li><a href="#">Элемент 2.4.4</a></li>
+									<li><a href="#">Элемент 2.4.5</a></li>
+									<li><a href="#">Элемент 2.4.6</a></li>
+									<li><a href="#">Элемент 2.4.7</a></li>
+								</ul>
+								<div id="third" class="mega-box-sub mega-box-3">
+									<div class="content">
+										<div class="row">
+											<ul class="mega-links-sub">
+												<li><a href="#">Элемент 2.4.1</a></li>
+												<li><a href="#">Элемент 2.4.2</a></li>
+												<li><a href="#">Элемент 2.4.3</a></li>
+												<li><a href="#">Элемент 2.4.4</a></li>
+												<li><a href="#">Элемент 2.4.5</a></li>
+												<li><a href="#">Элемент 2.4.6</a></li>
+												<li><a href="#">Элемент 2.4.7</a></li>
+											</ul>
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<a href="#">Элемент 2.5</a>
+							</div>
+							<div class="row">
+								<a href="#">Элемент 2.6</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li><a href="#">Элемент 3</a></li>
+				<li>
+					<a href="#" class="desktop-item">Элемент 4</a>
+					<a class="mobile-item-sub" href="#fourth"><input type="checkbox" class="mobile-input-sub-4" id="showSub-3">
+					<label for="showSub-3" ><span class="arrow"><i
+								class="fa fa-angle-down"></i></span></label></a>
+
+					<a class="mobile-elem-sub" href="#">Элемент 4</a>
+					<div id="fourth" class="mega-box mega-box-4">
+						<div class="content">
+							<div class="row">
+								<a href="#">Элемент 4.1</a>
+							</div>
+							<div class="row">
+								<a href="#">Элемент 4.2</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li><a href="#">Элемент 5</a></li>
+				<li><a href="#">Элемент 6</a></li>
+			</ul>
+			<label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+		</div>
+	</nav>
+
+
+	<script src="script.js" defer></script>
+</body>
+
+</html>
